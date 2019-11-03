@@ -461,14 +461,15 @@ The new functions return the number of nanoseconds as an integer value.
 ---
 
 layout: true
-## `secrets` Module
+## `secrets` Module (3.6)
 <!--------------------------------------------------------------------------------------------------------------------->
 
 ---
 
-Provides an obvious way to reliably generate cryptographically strong pseudo-random values suitable for managing secrets, such as account authentication, tokens, and similar.
+Provides an obvious way to reliably generate **cryptographically strong** pseudo-random values
+suitable for managing secrets, such as account authentication, tokens, and similar.
 
-`random` module is not appropriate for this.
+`random` module is not appropriate in these situations.
 
 ```python
 >>> import secrets
@@ -499,18 +500,17 @@ layout: true
 | `math.prod(iterable, *, start = 1)`        | Like `sum`, but calculates product of items                  | 3.8  |
 | `math.comb(10, 3)`                         | $C(10, 3)$, $10\choose 3$                                    | 3.8  |
 | `math.perm(10, 3)`                         | $P(10, 3)$                                                   | 3.8  |
-| `statistics.fmean([3.5, 4, 5.25])`         | float mean<br/>faster than `statistics.mean`                | 3.8  |
-| `statistics.geometric_mean()`              | $\sqrt[n]{a_1 a_2 \ldots a_n}$                               | 3.8  |
+| `statistics.fmean([3.5, 4, 5.25])`         | float mean, faster than `statistics.mean`                    | 3.8  |
 
 ---
 
 | Feature                                                  | Details / Sample                                             | Python Version |
 | -------------------------------------------------------- | ------------------------------------------------------------ | ---- |
+| `statistics.geometric_mean()`                            | $\sqrt[n]{a_1 a_2 \ldots a_n}$                               | 3.8  |
 | `statistics.multimode('aabbbbccddddeeffffgg')`           | `['b', 'd', 'f']`<br/>Return a list of the most frequently occurring values in the order they were first encountered in the *data*. | 3.8  |
 | `statistics.quantiles(data, *, n=4, method='exclusive')` | Divide *data* into *n* continuous intervals with equal probability. Returns a list of `n - 1` cut points separating the intervals. | 3.8  |
 | Class `statistics.NormalDist`                            | A tool for creating and manipulating normal distributions    | 3.8  |
 | Functions can have more than 255 arguments.              |                                                              | 3.7  |
-| Circular imports involving absolute imports with binding a submodule to a name are now supported. | Treat `import a.b.c as m` as `m = sys.modules['a.b.c']`      | 3.7  |
 | Local Time Disambiguation                                | `t.fold`  in [0, 1]                                          | 3.7  |
 | **kwargs and attributes of classes (in `__dict__`) preserve order |                                                              | 3.7  |
 
@@ -530,6 +530,6 @@ https://docs.python.org/3/whatsnew/3.8.html
 
 ## Report Issues
 
-If you found an issue or have a suggestion, please tell us.
+If you found an issue or have a suggestion, feel free to contact us.
 
 <a class="github-button" href="https://github.com/QueraTeam/presentations/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue QueraTeam/presentations on GitHub">Report Issues</a>
