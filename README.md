@@ -9,4 +9,4 @@ We publish our presentations here to keep them organized and make them available
 
 | Title | Presented by | Presented at | View |
 |-------|--------------|--------------|------|
-| **New Python Features** | [Mohammad Javad Naderi](https://github.com/mjnaderi) | 2019 Oct 26 | [View](https://querateam.github.io/learning/presentations/New%20Python%20Features/) |
+| **New Python Features** | [Mohammad Javad Naderi](https://github.com/mjnaderi) | 2019 Oct 26 | [View](https://querateam.github.io/learn/presentations/New%20Python%20Features/) |
