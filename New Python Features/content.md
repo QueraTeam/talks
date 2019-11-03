@@ -2,7 +2,7 @@ class: center, middle
 
 ![Python](images/python-logo.svg)
 
-# Python New Features
+# New Python Features
 
 ### Mohammad Javad Naderi
 
@@ -519,7 +519,7 @@ layout: true
 ---
 
 layout: false
-# References
+## References
 <!--------------------------------------------------------------------------------------------------------------------->
 
 https://docs.python.org/3/whatsnew/3.6.html
@@ -527,3 +527,9 @@ https://docs.python.org/3/whatsnew/3.6.html
 https://docs.python.org/3/whatsnew/3.7.html
 
 https://docs.python.org/3/whatsnew/3.8.html
+
+## Report Issues
+
+If you found an issue or have a suggestion, please tell us.
+
+<a class="github-button" href="https://github.com/QueraTeam/presentations/issues" data-icon="octicon-issue-opened" data-size="large" aria-label="Issue QueraTeam/presentations on GitHub">Report Issues</a>
