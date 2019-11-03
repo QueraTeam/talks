@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: normal;
+}
+
+h1 > code, h2 > code, h3 > code {
+    font-size: .8em;
+}
+
+h2 {
+    font-size: 42px !important;
+}
+
+p, ul, ol {
+    line-height: 1.5em;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.remark-inline-code {
+    background-color: #F0F0F0;
+    border-radius: .2em;
+    padding: 0 .3em .1em;
+}
+
+pre code {
+    color: #a9b7c6;
+    background: #282b2e;
+    display: block;
+    padding: .5em;
+}
+
+pre {
+    border-radius: .4em;
+    line-height: 1.1em;
+    overflow-x: auto;
+}
+
+table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 15px;
+}
+
+table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
