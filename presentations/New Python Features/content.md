@@ -22,6 +22,7 @@ layout: true
 
 ---
 
+From Python **3.6**, `dict` objects keep insertion order. 
 In Python **3.6**, this was not part of the language (was an implementation detail).
 
 In Python **3.7**, the insertion-order preservation nature of `dict` objects has been
@@ -56,20 +57,25 @@ result:      12.35
 
 ---
 
-New `=` specifier  in **3.8** for debugging:
+New `=` specifier in Python **3.8** for debugging:
 
 ```python
 user = 'mjnaderi'
 member_since = date(1975, 7, 31)
 print(f'{user=} {member_since=}')
+```
 
+```
+user='mjnaderi' member_since=datetime.date(1975, 7, 31)
+```
+
+```python
 from math import sin, radians
 theta = 30
 print(f'{theta=}  {sin(radians(theta))=:.3f}')
 ```
 
 ```
-user='mjnaderi' member_since=datetime.date(1975, 7, 31)
 theta=30  sin(radians(theta))=0.500
 ```
 
@@ -173,10 +179,10 @@ f(10, 20, 30, 40, 50, f=60)           # Invalid
 
 **Use Cases:**
 
-- Fully emulate behaviors of existing C functions like `pow`:
+- Emulate behaviors of existing C functions.
 
   ```python
-  def pow(x, y, z=None, /):
+  def pow(base, exp, mod=None, /):  # pow doesn't accept keyword arguments
       # ...
   ```
 
@@ -218,12 +224,13 @@ layout: true
 
 ---
 
-This function drops you into the debugger at the call site.
+This function drops you into the debugger (pdb) at the call site.
 You can continue execution using `continue` command in pdb.
 
+This does not really add any new functionality to Python, but it makes
+using debuggers more flexible and intuitive.
+
 `breakpoint()` and `continue` are our new friends now!
-
-
 
 ---
 
@@ -249,7 +256,6 @@ layout: true
 ---
 
 ```python
-# from qlead
 close_for = close_for * 60 * 1000
 
 close_for *= 60_000
@@ -274,21 +280,6 @@ layout: true
 <!--------------------------------------------------------------------------------------------------------------------->
 
 ---
-
-```python
-@requires_authorization
-def somefunc(param1='', param2=0):
-    r'''A docstring'''
-    if param1 > param2: # interesting
-        print 'Gre\'ater'
-    return (param2 - param1 + 1 + 0b10l) or None
-
-class SomeClass:
-    pass
-
->>> message = '''interpreter
-... prompt'''
-```
 
 ```python
 import cProfile

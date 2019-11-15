@@ -28,14 +28,14 @@ code {
 }
 
 .remark-inline-code {
-    background-color: #F0F0F0;
+    background-color: #f4f4f4;
     border-radius: .2em;
     padding: 0 .3em .1em;
 }
 
 pre code {
-    color: #a9b7c6;
-    background: #282b2e;
+    color: #333;
+    background: #f8f8f8;
     display: block;
     padding: .5em;
 }
