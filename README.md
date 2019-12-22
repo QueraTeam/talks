@@ -11,3 +11,4 @@ We publish our presentations here to keep them organized and make them available
 |-------|--------------|--------------|------|
 | **New Python Features**  | [Mohammad Javad Naderi](https://github.com/mjnaderi) | 2019 Oct 26 | [View](https://querateam.github.io/talks/presentations/New%20Python%20Features/) |
 | **Dependency Injection** | [Saeed Tahmasebi](https://github.com/saeed617)       | 2019 Nov 9  | [View](https://querateam.github.io/talks/presentations/Dependency%20Injection/Dependency%20Injection.pdf) |
+| **Anti-patterns**        | [Mehran Salmani](https://github.com/mehransi)        | 2019 Nov 27 | [View](https://querateam.github.io/talks/presentations/Anti-patterns/anti-patterns.pdf) |
