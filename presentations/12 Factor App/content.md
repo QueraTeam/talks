@@ -52,7 +52,7 @@ layout: true
  - by **Adam Wiggins**
    - **Heroku** (Early cloud PaaS)
     
- - <a href="http://12factor.net" style="color:skyblue;text-decoration:none">12 Factor Website</a>
+ - Website: <a href="http://12factor.net">12factor.net</a>
 
 ---
 #### For Who?
@@ -153,17 +153,199 @@ layout: true
 
 
 ---
+layout: false
 
+## 1. Codebase
+
+One codebase tracked in revision control, many deploys
+
+- Single app per codebase
+
+<img src="./images/codebase-deploys.png" alt="Codebase Deploys" style="width:60%;height:60%;background:white;" />
+
+
+---
+
+## 2. Dependencies
+
+Explicitly declare and isolate dependencies
+
+- Never rely on the implicit existence of any system tools
+  - Example: curl
+
+- Supports reproducible builds
+
+- Examples of tools: pip/virtualenv, npm/yarn, ...
+
+**HIGH IMPORTANCE!**
+
+---
+
+## 3. Config
+
+Store configuration in the environment **(NOT code)**
+
+- Config is anything that may vary between deploys:
+  - Resource handles
+  - Credentials
+  - Canonical hostname for the deploy
+
+- Strict separation of config from code
+
+- Does not include internal application config (like Spring)
+
+
+---
+
+## 4. Backing Services
+
+Treat backing services as attached resources
+
+- No distinction between local and third party services
+
+- Allows great flexibility
+
+- Loose coupling to the attached deploy
+
+- Resources can be attached and detached to deploys at will, no code changes
+
+<img src="./images/attached-resources.png" alt="Attached Resources" style="background:white;width:60%;height:60%;" />
+
+---
+
+## 5. Build Release Run
+
+Strictly separate build, release and run stages
+
+- **Build** : Converts code repo into an executable bundle
+
+- **Release** : Build with deploy's current config, ready for immediate execution
+
+- **Run** : Launches a set of app's processes against a selected release
+
+<img src="./images/release.png" alt="Release" style="width:60%;height:60%;" />
+
+---
+## 6. Processes
+
+Execute the app as one or more stateless processes
+
+- Stateless and share-nothing
+
+- Session data should be stored with a time-expiration, e.g. Memcached or Redis
+
+- Stateless means:
+  - More robust
+  - Easier to manage
+  - Incurs fewer bugs
+  - Scales better
+
+
+---
+## 7. Port binding
+
+Export services via port binding
+
+- Exports HTTP as a service by binding to a port
+
+- Routing layer to handle requests routing to a hostname
+
+- Uses Webserver libraries such as Jetty for JVM or Thin for Ruby
+
+- One app can become the backing service for another app
+
+
+---
+## 8. Concurrency
+
+Scale out via the process model
+
+- Processes are a first class citizen
+
+- Never daemonize or write PID files
+
+- Relies on OS process manager (upstart, systemd, launchd, foreman, ...) to:
+  - Manage output streams
+  - Respond to crashed processes
+  - Handle restarts and shutdowns
+  
+
+---
+## 8. Concurrency
+
+<img src="./images/process-types.png" alt="Concurrency" style="width:70%;height:70%;" />
+
+
+---
+
+## 9. Disposability
+
+Maximize robustness with fast startup and graceful shutdown
+
+- Can be started or stopped at a moment’s notice
+
+- Maximize robustness with fast startup and graceful shutdown
+
+- Gracefully shut down when receiving a SIGTERM signal
+
+- Processes should be robust against sudden death
+
+---
+## 10. Dev/Prod parity
+
+Keep development, staging, and production as similar as possible
+
+- Designed for continuous deployment
+
+- Keep the gap between development and production small:
+  - Time gap: long time to prod
+  - Personnel gap: developers code, ops deploy
+  - Tools gap: different stack
+  
+- Resists to use different backing services between dev and prod
+
+
+---
+
+## 11. Logs
+
+Treat logs as event streams
+
+- Event stream is written to STDOUT
+
+- Use log routers (such as Logplex and Fluent)
+
+---
+## 12. Admin Processes
+
+Run admin/management tasks as one-off processes
+
+- Run against a release: same code and config as any process run against that release
+
+- Must ship with application code to avoid synchronization issues
+
+- e.g. Database migration
+
+
+---
+
+class: center,middle
+
+# Thank You!
+
+---
 
 layout: false
 ## References
 <!--------------------------------------------------------------------------------------------------------------------->
 
-https://docs.python.org/3/whatsnew/3.6.html
+https://12factor.net
 
-https://docs.python.org/3/whatsnew/3.7.html
+https://dev.to/heroku/twelve-factor-apps-a-retrospective-and-look-forward-4j4f
 
-https://docs.python.org/3/whatsnew/3.8.html
+https://medium.com/hashmapinc/how-i-use-the-twelve-factor-app-methodology-for-building-saas-applications-with-java-scala-4cdb668cc908
+
+https://dev.to/simon_sugob/the-twelve-factor-appa-successful-microservices-guideline-3a1h
 
 ## Report Issues
 

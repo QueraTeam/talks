@@ -81,3 +81,13 @@ table tbody td {
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
 }
+
+.remark-slide-content a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.remark-slide-content img {
+    margin: auto;
+    background:white;
+}
