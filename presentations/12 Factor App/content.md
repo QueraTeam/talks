@@ -107,46 +107,46 @@ layout: true
 ## The Factors
 
 ---
-1. Codebase
+<b>1.</b> Codebase
   - One Codebase Many Deploys
 
-2. Dependencies
+<b>2.</b> Dependencies
   - Explicitly Declare and Isolate
 
-3. Config
+<b>3.</b> Config
   -  Store in The Environment
   
-4. Backing Services
+<b>4.</b> Backing Services
   - As Attached Resources
   
-5. Build Release Run
+<b>5.</b> Build Release Run
   - Strictly Separate Build & Run Stages
   
 
 ---
 
-6. Processes
+<b>6.</b> Processes
   - Execute The App As One or More Stateless Processes
 
-7. Port Binding
+<b>7.</b> Port Binding
   - Export Services Via Port Binding
   
-8. Concurrency
+<b>8.</b> Concurrency
   - Scale Out Via The Process Model
 
-9. Disposability
+<b>9.</b> Disposability
   - Maximise Robustness With Fast Startup And Graceful Shutdown
   
-10. Dev Prod Parity 
+<b>10.</b> Dev Prod Parity 
   - Keep Development,Staging And Production As Similar As Possible
 
 
 ---
 
-11. Logs
+<b>11.</b> Logs
   - Treat Logs As Event Streams
   
-12. Admin Processes
+<b>12.</b> Admin Processes
   - Run Management Tasks As One-Off Processes
 
 
