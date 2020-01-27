@@ -67,16 +67,14 @@ class: center,middle
 
 # And Docker!
 
+<img src="./images/docker.png" alt="Docker" style="width:500px;height:500px;background:white" />
+
+
 ---
 class: center,middle
 
 ## If you use docker in production you probably **already** have a 12 factor app!
 
----
-
-<center>
-<img src="./images/docker.png" alt="Docker" style="width:600px;height:600px;background:white" />
-</center>
 ---
 class: center,middle
 
@@ -109,46 +107,46 @@ layout: true
 ## The Factors
 
 ---
-1.Codebase
+1. Codebase
   - One Codebase Many Deploys
 
-2.Dependencies
+2. Dependencies
   - Explicitly Declare and Isolate
 
-3.Config
+3. Config
   -  Store in The Environment
   
-4.Backing Services
+4. Backing Services
   - As Attached Resources
   
-5.Build Release Run
+5. Build Release Run
   - Strictly Separate Build & Run Stages
   
 
 ---
 
-6.Processes
+6. Processes
   - Execute The App As One or More Stateless Processes
 
-7.Port Binding
+7. Port Binding
   - Export Services Via Port Binding
   
-8.Concurrency
+8. Concurrency
   - Scale Out Via The Process Model
 
-9.Disposability
+9. Disposability
   - Maximise Robustness With Fast Startup And Graceful Shutdown
   
-10.Dev Prod Parity 
+10. Dev Prod Parity 
   - Keep Development,Staging And Production As Similar As Possible
 
 
 ---
 
-11.Logs
+11. Logs
   - Treat Logs As Event Streams
   
-12.Admin Processes
+12. Admin Processes
   - Run Management Tasks As One-Off Processes
 
 
@@ -185,7 +183,7 @@ Explicitly declare and isolate dependencies
 
 Store configuration in the environment **(NOT code)**
 
-- Config is anything that may vary between deploys:
+- Config is anything that may **vary between deploys**:
   - Resource handles
   - Credentials
   - Canonical hostname for the deploy
@@ -347,6 +345,11 @@ https://medium.com/hashmapinc/how-i-use-the-twelve-factor-app-methodology-for-bu
 
 https://dev.to/simon_sugob/the-twelve-factor-appa-successful-microservices-guideline-3a1h
 
+https://www.slideshare.net/rudiyardley/the-12-factor-app?qid=d56bf5db-74b9-48ed-a1be-360771b56cdc&v=&b=&from_search=1
+
+https://www.slideshare.net/labianchin/12-factor-app?qid=d56bf5db-74b9-48ed-a1be-360771b56cdc&v=&b=&from_search=7
+
+---
 ## Report Issues
 
 If you found an issue or have a suggestion, feel free to contact us.
