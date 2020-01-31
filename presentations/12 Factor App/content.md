@@ -1,8 +1,8 @@
 class: center, middle
 
-
 <h4 style="color:skyblue;">Software Engineering Patterns</h4>
-# 12 Factor App
+
+<h1 style="font-size: 4em">12 Factor App</h1>
 
 ### Arian Akbari
 
@@ -10,95 +10,105 @@ class: center, middle
 
 Quera
 
-January 2020
-
-
+February 2020
 
 ---
 
-layout: true
-## Introduction
+class: center,middle
 <!--------------------------------------------------------------------------------------------------------------------->
+<h1 style="font-size: 4em">Concepts</h1>
 
 ---
 
-#### What is 12 Factor App?
+# ...aaS Models
 
-- Methodology for building **software-as-a-service** in the **Cloud**
-
-
-
+<img src="./images/aas.png" alt="aaS Models" style="width:100%"/>
 
 ---
 
-#### Why is it important? 
+# SaaS
+
+In the modern era, software is commonly delivered as a service:
+- called *web apps*
+- or *software-as-a-service* (SaaS)
+
+A third-party provider hosts applications and makes them available
+to customers over the Internet.
+
+---
+
+# Cloud Scalability
+
+<img src="./images/horizontal-vs-vertical-scaling.png"
+     alt="Horizontal vs Vertical Scaling" style="width:80%"/>
+
+- Scale **UP** vs. Scale **OUT**
+- You can't scale up forever.
+- **Horizontal** scaling is the winner!
+
+---
+
+# CI/CD
+
+...
+
+---
+
+class: center,middle
+<!--------------------------------------------------------------------------------------------------------------------->
+<h1 style="font-size: 4em">Introduction</h1>
+
+---
+
+# 12 Factor App?
+
+> Guidelines for building scalable **SaaS** (software-as-a-service) apps.
+
+- **Raises awareness** of some systemic problems in modern app development
+- Provides a **shared vocabulary** for discussing those problems
+- Offers a set of **conceptual solutions**
+
+---
+
+# Why is it important? 
 
 - **Declarative** formats for setup automation
-
 - **Minimize divergence** between prod/dev
-
-- **Maximum** portability between execution environments
-
-- **Deployment** on modern cloud platforms
-
+- **Maximum portability** between execution environments
+- Deployment on modern **cloud platforms**
 - Enables **continuous deployment**
+- **Scale** easily
 
-- **Scale up** easily
+---
+
+# History
+
+- Manifesto written around **2012**
+- By **Adam Wiggins**
+  - at **Heroku** (Early cloud PaaS)
+- Website: <a href="http://12factor.net">12factor.net</a>
 
 ---
 
-#### History
- - Manifesto written around **2012**
- - by **Adam Wiggins**
-   - **Heroku** (Early cloud PaaS)
-    
- - Website: <a href="http://12factor.net">12factor.net</a>
+# For Who?
 
----
-#### For Who?
-- **Any developer** building applications which run as a **service**
-- Ops engineers who deploy or manage such applications
-
----
-layout: true
+- Any **developer** building applications which run as a **service**
+- **Ops engineers** who deploy or manage such applications
 
 ---
 class: center,middle
 
 # And Docker!
 
-<img src="./images/docker.png" alt="Docker" style="width:500px;height:500px;background:white" />
+<img src="./images/docker.png" alt="Docker" style="width:400px;background:white" />
 
-
----
-class: center,middle
-
-## If you use docker in production you probably **already** have a 12 factor app!
-
----
-class: center,middle
-
-# ...AAS Models
-
-<h3 style="color:skyblue">... As a Service Models</h3>
+Docker helps you with 12 factor app a lot!
 
 ---
 
-layout: true
-
-## AAS Models
-
----
-
-<img src="./images/aas.png" alt="AAS Models" style="width:100%;height:100%" />
-
----
-layout: true
-
----
 class:center,middle
-
-# The Factors!
+<!--------------------------------------------------------------------------------------------------------------------->
+<h1 style="font-size: 4em">The Factors</h1>
 
 ---
 
@@ -107,223 +117,247 @@ layout: true
 ## The Factors
 
 ---
-<b>1.</b> Codebase
-  - One Codebase Many Deploys
 
-<b>2.</b> Dependencies
-  - Explicitly Declare and Isolate
-
-<b>3.</b> Config
-  -  Store in The Environment
-  
-<b>4.</b> Backing Services
-  - As Attached Resources
-  
-<b>5.</b> Build Release Run
-  - Strictly Separate Build & Run Stages
-  
+|                            |                                                    |
+|----------------------------|----------------------------------------------------|
+| **1. Codebase**            | One codebase, many deploys                         |
+| **2. Dependencies**        | Explicitly declare and isolate                     |
+| **3. Config**              | Store in the environment                           |
+| **4. Backing Services**    | Treat as attached resources                        |
+| **5. Build, Release, Run** | Strictly separate build & run stages               |
+| **6. Processes**           | Execute the app as one or more stateless processes |
 
 ---
 
-<b>6.</b> Processes
-  - Execute The App As One or More Stateless Processes
-
-<b>7.</b> Port Binding
-  - Export Services Via Port Binding
-  
-<b>8.</b> Concurrency
-  - Scale Out Via The Process Model
-
-<b>9.</b> Disposability
-  - Maximise Robustness With Fast Startup And Graceful Shutdown
-  
-<b>10.</b> Dev Prod Parity 
-  - Keep Development,Staging And Production As Similar As Possible
-
-
----
-
-<b>11.</b> Logs
-  - Treat Logs As Event Streams
-  
-<b>12.</b> Admin Processes
-  - Run Management Tasks As One-Off Processes
-
+|                         |                                                                      |
+|-------------------------|----------------------------------------------------------------------|
+| **7. Port Binding**     | Export services via port binding                                     |
+| **8. Concurrency**      | Scale out via the process model                                      |
+| **9. Disposability**    | Maximize robustness<br/>with fast startup and graceful shutdown      |
+| **10. Dev/Prod Parity** | Keep development, staging, and production<br/>as similar as possible |
+| **11. Logs**            | Treat logs as event streams                                          |
+| **12. Admin Processes** | Run admin/management tasks as one-off processes                      |
 
 ---
 layout: false
 
 ## 1. Codebase
 
-One codebase tracked in revision control, many deploys
+> One codebase (repo) tracked in revision control, many deploys
 
-- Single app per codebase
+<img src="./images/codebase-deploys.png" alt="Codebase Deploys" style="width:50%; float: right;background:white;" />
 
-<img src="./images/codebase-deploys.png" alt="Codebase Deploys" style="width:60%;height:60%;background:white;" />
+- Single app per repo (1-to-1)
+- Multiple repos
+  - not an app
+  - a distributed system
 
 
 ---
 
 ## 2. Dependencies
 
-Explicitly declare and isolate dependencies
+> Explicitly declare and isolate dependencies
 
-- Never rely on the implicit existence of any system tools
-  - Example: curl
-
+- Never rely on implicit existence of system-wide packages
+  - ... or system tools (e.g. curl, ImageMagick)
 - Supports reproducible builds
 
-- Examples of tools: pip/virtualenv, npm/yarn, ...
+<p style="height: 10px"></p>
+
+- Declare dependencies in a **manifest**
+  - `pip`, `requirements.txt`, `pyproject.toml`
+- Use a dependency **isolation** tool
+  - `virtualenv`
+
+<p style="height: 10px"></p>
 
 **HIGH IMPORTANCE!**
 
 ---
+layout: true
 
 ## 3. Config
 
-Store configuration in the environment **(NOT code)**
-
-- Config is anything that may **vary between deploys**:
-  - Resource handles
-  - Credentials
-  - Canonical hostname for the deploy
-
-- Strict separation of config from code
-
-- Does not include internal application config (like Spring)
-
+> Store config in the environment
 
 ---
+
+Config is anything that may **vary between deploys**
+- Including:
+  - Resource handles (database, cache, ...)
+  - Credentials
+  - Per-deploy values (e.g. canonical hostname)
+- Does not include internal application config that don't vary between deploys
+  - They should be in the code
+
+---
+
+Store config in **environment variables**
+- Strict separation of config from code
+- language-agnostic, OS-agnostic
+- Granular control, orthogonality
+  - Instead of **grouping** configs into named groups (e.g. `development`, `test`, `production`)
+    which does not scale cleanly.
+
+Tools exist that load config from `.env` files
+- `python-dotenv`, `phpdotenv`, `dotenv` for Node.js, ...
+
+---
+layout: true
 
 ## 4. Backing Services
 
-Treat backing services as attached resources
+---
 
-- No distinction between local and third party services
+> Treat backing services as attached resources
 
-- Allows great flexibility
-
-- Loose coupling to the attached deploy
-
-- Resources can be attached and detached to deploys at will, no code changes
-
-<img src="./images/attached-resources.png" alt="Attached Resources" style="background:white;width:60%;height:60%;" />
+| &nbsp;                            | Local                | Third-party        |
+|-----------------------------------|----------------------|--------------------|
+| **Databases**                     | PostgreSQL, CouchDB  | Amazon RDS         |
+| **Caching systems**               | Memcached, Redis     | Amazon Elasticache |
+| **Messaging/Queueing systems**    | RabbitMQ, Beanstalkd | Amazon SQS         |
+| **SMTP services**                 | Postfix              | Mailgun            |
+| **Storage services**              |                      | Amazon S3          |
+| ...                               |                      |                    |
 
 ---
 
-## 5. Build Release Run
+**No distinction between local and third party services**
+- Allows great flexibility
+- Loose coupling to the attached deploy
+- Resources can be _attached_ and _detached_ to deploys at will, **no code changes**
+  - e.g. You can easily swap local PostgreSQL with another DB server of your own, or Amazon RDS.
 
-Strictly separate build, release and run stages
+<img src="./images/attached-resources.png" alt="Attached Resources" style="background:white;width:70%; display: block; margin:auto" />
+
+---
+layout: true
+
+## 5. Build, Release, Run
+
+> Strictly separate **build**, **release** and **run** stages
+
+---
 
 - **Build** : Converts code repo into an executable bundle
-
 - **Release** : Build with deploy's current config, ready for immediate execution
-
 - **Run** : Launches a set of app's processes against a selected release
 
-<img src="./images/release.png" alt="Release" style="width:60%;height:60%;" />
+<img src="./images/release.png" alt="Release" style="display:block;margin: auto" />
 
 ---
+
+- It is impossible to make changes to the code at runtime.
+- Releases should have unique ID.
+- Releases cannot be mutated. Any change must create a new release.
+- You can **rollback** to previous release ID.
+
+---
+layout: false
+
 ## 6. Processes
 
-Execute the app as one or more stateless processes
+> Execute the app as one or more stateless _processes_
 
-- Stateless and share-nothing
+Processes should be **stateless** and **share-nothing**.
+- Any data that needs to persist must be stored in a stateful backing service, typically a database.
 
-- Session data should be stored with a time-expiration, e.g. Memcached or Redis
+Caching
+- The memory space of process can be used as cache **just for a single transaction**!
+- Use caching service (e.g. Redis) for inter-process cache.
+  - e.g. for user session data
 
-- Stateless means:
-  - More robust
-  - Easier to manage
-  - Incurs fewer bugs
-  - Scales better
-
+Asset compilation
+- Should be in **build** stage.
 
 ---
+
 ## 7. Port binding
 
-Export services via port binding
+> Export services via port binding
 
-- Exports HTTP as a service by binding to a port
-
-- Routing layer to handle requests routing to a hostname
-
-- Uses Webserver libraries such as Jetty for JVM or Thin for Ruby
-
+- App **should be self-contained** and export its services
+- Exports services (e.g. HTTP) by binding to a port and awaiting incoming requests
+- A routing layer (e.g. nginx) is used to route requests from a public-facing hostname to the port-bound web processes
+- Typically a webserver library is added to app as a dependency.
+    - e.g. Jetty for JVM, Thin for Ruby, Tornado/uWSGI for Python
 - One app can become the backing service for another app
 
-
 ---
+layout: true
 ## 8. Concurrency
 
-Scale out via the process model
-
-- Processes are a first class citizen
-
-- Never daemonize or write PID files
-
-- Relies on OS process manager (upstart, systemd, launchd, foreman, ...) to:
-  - Manage output streams
-  - Respond to crashed processes
-  - Handle restarts and shutdowns
-  
+> Scale out via the process model
 
 ---
-## 8. Concurrency
 
-<img src="./images/process-types.png" alt="Concurrency" style="width:70%;height:70%;" />
+<img src="./images/process-types.png" alt="Concurrency" style="float: right; width: 45%" />
 
+- Individual processes can handle their own internal multiplexing
+  - via threads, async/evented, ...
+- **BUT**, app must be able to span multiple **processes**!
+  - Processes are a first class citizen
 
 ---
+
+- Never self-daemonize or write PID files
+- Instead, use OS process manager
+  - e.g. `systemd`
+  - Manage output streams, Respond to crashed processes, Handle restarts and shutdowns
+
+---
+layout: false
 
 ## 9. Disposability
 
-Maximize robustness with fast startup and graceful shutdown
+> Maximize robustness with **fast startup** and **graceful shutdown**
 
-- Can be started or stopped at a moment’s notice
-
-- Maximize robustness with fast startup and graceful shutdown
-
-- Gracefully shut down when receiving a SIGTERM signal
-
-- Processes should be robust against sudden death
+- Processes should be **disposable**:
+  - Start **quickly**
+  - Shutdown **gracefully**  (when receiving `SIGTERM`)
+  - Be robust against **sudden death**
+- Fast startup provides more agility for the release process and scaling up
 
 ---
 ## 10. Dev/Prod parity
 
-Keep development, staging, and production as similar as possible
+> Keep development, staging, and production as similar as possible
 
-- Designed for continuous deployment
-
-- Keep the gap between development and production small:
-  - Time gap: long time to prod
-  - Personnel gap: developers code, ops deploy
-  - Tools gap: different stack
-  
+- Designed for continuous deployment (CD)
+- Keep the **gap** between development and production small:
+  - **Time gap**: long time to prod **vs.** CI & deploy ASAP
+  - **Personnel gap**: developers code, ops deploy **vs.** Devops
+  - **Tools gap**: different stack **vs.** similar stack
 - Resists to use different backing services between dev and prod
-
 
 ---
 
 ## 11. Logs
 
-Treat logs as event streams
+> Treat logs as event streams
 
-- Event stream is written to STDOUT
-
-- Use log routers (such as Logplex and Fluent)
+- App never concerns itself with **routing** or **storage** of its output stream
+- Event stream is written to `STDOUT`
+- Captured by execution environment
+  - Use log routers (such as Logplex and Fluentd)
 
 ---
+
 ## 12. Admin Processes
 
-Run admin/management tasks as one-off processes
+> Run admin/management tasks as one-off processes
 
-- Run against a release: same code and config as any process run against that release
+One-off admin tasks include:
+- DB migrations (`manage.py migrate`)
+- Console / REPL Shell (`manage.py shell`)
+- One-time scripts committed into repo (`scripts/fix_bad_records.py`)
 
-- Must ship with application code to avoid synchronization issues
-
-- e.g. Database migration
-
+Admin tasks
+- Run as separate process
+- Run against the same release
+- Admin code must ship with app code
+- Same dependency isolation techniques (e.g. use the same virtualenv)
 
 ---
 
@@ -348,6 +382,8 @@ https://dev.to/simon_sugob/the-twelve-factor-appa-successful-microservices-guide
 https://www.slideshare.net/rudiyardley/the-12-factor-app?qid=d56bf5db-74b9-48ed-a1be-360771b56cdc&v=&b=&from_search=1
 
 https://www.slideshare.net/labianchin/12-factor-app?qid=d56bf5db-74b9-48ed-a1be-360771b56cdc&v=&b=&from_search=7
+
+http://pudgylogic.blogspot.com/2016/01/horizontal-vs-vertical-scaling.html
 
 ---
 ## Report Issues

@@ -1,10 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 body {
     font-family: 'Lato', sans-serif;
     color: #eee;
+}
+
+strong, b {
+    color: #FFF;
+    font-weight: 900;
 }
 
 .remark-slide-content {
@@ -14,6 +19,10 @@ body {
 h1, h2, h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: normal;
+}
+
+h3 {
+    font-size: 32px !important;
 }
 
 h1 > code, h2 > code, h3 > code {
@@ -28,12 +37,16 @@ p, ul, ol {
     line-height: 1.5em;
 }
 
+li {
+    margin: .5em 0;
+}
+
 code {
     font-family: 'Ubuntu Mono', monospace;
 }
 
 .remark-inline-code {
-    background-color: #777;
+    background-color: rgba(255,255,255,0.12);
     border-radius: .2em;
     padding: 0 .3em .1em;
 }
@@ -59,27 +72,18 @@ pre {
     overflow-x: auto;
 }
 
-table {
-    border: solid 1px #DDEEEE;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font-size: 15px;
+table th {
+    text-align: initial;
+    border-bottom: 1px solid #aaa;
 }
 
-table thead th {
-    background-color: #DDEFEF;
-    border: solid 1px #DDEEEE;
-    color: #336B6B;
-    padding: 10px;
-    text-align: left;
-    text-shadow: 1px 1px 1px #fff;
+table td:empty, table th:empty {
+  visibility: hidden;
 }
 
-table tbody td {
-    border: solid 1px #DDEEEE;
-    color: #333;
-    padding: 10px;
-    text-shadow: 1px 1px 1px #fff;
+table tbody td, table thead th {
+    padding: .4em;
+    line-height: 1.5em;
 }
 
 .remark-slide-content a {
@@ -90,4 +94,13 @@ table tbody td {
 .remark-slide-content img {
     margin: auto;
     background:white;
+}
+
+blockquote {
+    margin: 1em 0;
+}
+
+blockquote > p {
+    padding: 1em;
+    background: rgba(255,255,255,0.1);
 }
