@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #eee;
+}
+
+strong, b {
+    color: #FFF;
+    font-weight: 900;
+}
+
+.remark-slide-content {
+    background: #444 !important;
+}
+
+h1, h2, h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 32px !important;
+}
+
+h1 > code, h2 > code, h3 > code {
+    font-size: .8em;
+}
+
+h2 {
+    font-size: 42px !important;
+}
+
+p, ul, ol {
+    line-height: 1.5em;
+}
+
+li {
+    margin: .5em 0;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.remark-inline-code {
+    background-color: rgba(255,255,255,0.12);
+    border-radius: .2em;
+    padding: 0 .3em .1em;
+}
+
+pre code {
+    color: #333;
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: .4em;
+    display: block;
+    padding: .5em;
+}
+
+.hljs-github .hljs {
+    background: #f6f6f6 !important;
+    border: 1px solid #ddd;
+    border-radius: .4em;
+}
+
+pre {
+    border-radius: .4em;
+    line-height: 1.1em;
+    overflow-x: auto;
+}
+
+table th {
+    text-align: initial;
+    border-bottom: 1px solid #aaa;
+}
+
+table td:empty, table th:empty {
+  visibility: hidden;
+}
+
+table tbody td, table thead th {
+    padding: .4em;
+    line-height: 1.5em;
+}
+
+.remark-slide-content a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.remark-slide-content img {
+    margin: auto;
+    background:white;
+}
+
+blockquote {
+    margin: 1em 0;
+}
+
+blockquote > p {
+    padding: 1em;
+    background: rgba(255,255,255,0.1);
+}
