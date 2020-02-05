@@ -50,19 +50,25 @@ to customers over the Internet.
 
 # CI/CD
 
-- Continuous Integration:
- - Continuous integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day.
+**Continuous Integration (CI)**
+- The practice of merging all developer working copies to a shared mainline several times a day.
+  - To avoid **integration hell** or merge hell
+  - CI puts a great emphasis on **automated tests**
  
-- Continuous Delivery
- - Continuous delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way.
- - In theory, with continuous delivery, you can decide to release daily,weekly, fortnightly, or whatever suits your business requirements.
+**Continuous Delivery (CD)**
+- An extension of continuous integration to make sure that
+  you can release new changes to your customers **quickly** in a **sustainable** way.
+- Release process is automated. You can decide to release daily, weekly, ...
+
+**Continuous Deployment (CD)**
+- No release day. No human intervention. Only a failed test will prevent a new change to be deployed to production.
+
 ---
 class: center,middle
 
 # CI/CD & DevOps
 
 <img src="./images/ci-cd.png" style="width:700px" />
-
 
 ---
 
@@ -403,6 +409,8 @@ http://pudgylogic.blogspot.com/2016/01/horizontal-vs-vertical-scaling.html
 https://www.slideshare.net/HazzimAnaya/cicd-devops-101?qid=e0c5bcaa-f031-459b-8786-22316f5e6799&v=&b=&from_search=28
 
 https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.html
+
+https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment
 
 
 ## Report Issues
