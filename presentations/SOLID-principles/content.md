@@ -177,7 +177,7 @@ class: middle, center
 ## should take care of the <span style="color: skyblue">Frequent Changes</span>
 
 <img 
-    src="./images/solid_2_ocp.png"
+    src="./images/solid_2_ocp.jpg"
     alt="solid 2 ocp" 
     style="width:100%; border-radius: 15px "
 />
