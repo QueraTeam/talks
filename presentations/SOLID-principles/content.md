@@ -1,7 +1,7 @@
 class: center, middle
 
 <h4 style="color:skyblue;">Object-Oriented Programming</h4>
-<h1 style="font-size: 4em">SOLID principles</h1>
+<u><h1 style="font-size: 4em">SOLID principles</h1></u>
 ### Peyman Najafi
 <br/>
 Quera
@@ -11,7 +11,7 @@ February 2020
 ---
 class: middle
 
-# History
+# <u>History</u>
 
 - First conceptualized by [Robert Cecil Martin](https://en.wikipedia.org/wiki/Robert_C._Martin) ("Uncle Bob")
 - In his 2000 paper: [Design Principles and Design Patterns](https://fi.ort.edu.uy/innovaportal/file/2032/1/design_principles.pdf)
@@ -55,7 +55,7 @@ class: middle
 ---
 class: middle, center
 
-# Concepts
+# <u>Concepts</u>
 <img 
     src="./images/solid_graphical.png"
     alt="solid graphical" 
@@ -576,12 +576,12 @@ class: middle, center
 ---
 class: center, middle
 
-# Thank You<span style="color: skyblue">!</span>
+# <u>Thank You<span style="color: skyblue">!</span></u>
 
 ---
 layout: false
 
-## References
+## <u>References</u>
 - https://www.baeldung.com/solid-principles
 - https://medium.com/mindorks/solid-principles-explained-with-examples-79d1ce114ace
 - https://medium.com/swift-india/solid-principles-part-1-single-responsibility-ccfd4ff34a5a
@@ -593,7 +593,7 @@ layout: false
 ---
 layout: false
 
-## References
+## <u>References</u>
 - https://github.com/heykarimoff/solid.python
 - https://cobuildlab.com/development-blog/solid-principles-python-django/
 - https://www.youtube.com/watch?v=9DYqQDjBIqw&feature=youtu.be
@@ -601,7 +601,8 @@ layout: false
 - http://web.archive.org/web/20160521015258/https://lostechies.com/derickbailey/2009/02/11/solid-development-principles-in-motivational-pictures/
 
 
-## Report Issues
+<br/>
+## <u>Report Issues</u>
 
 If you found an issue or have a suggestion, feel free to contact us.
 
