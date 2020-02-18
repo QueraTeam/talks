@@ -1,16 +1,11 @@
 class: center, middle
 
 <h4 style="color:skyblue;">Object-Oriented Programming</h4>
-
 <h1 style="font-size: 4em">SOLID principles</h1>
-
-
 ### Peyman Najafi
-
 <br/>
-
 Quera
-
+<br/>
 February 2020
 
 ---
@@ -26,7 +21,7 @@ class: middle
 ---
 class: middle
 
-# How does it help us write better code?
+## How does it help us write better code?
 
 - ### Encourage us to create more:
     - maintainable,
@@ -65,12 +60,12 @@ class: middle, center
     src="./images/solid_graphical.png"
     alt="solid graphical" 
     style="width:60%"
- />
+/>
 
 ---
 class: middle
 
-# 1. <strong style="color:skyblue;">S</strong>ingle Responsibility (SRP)
+# 1. <strong style="color:skyblue;">S</strong>ingle Responsibility
 
 - ### Class should be having one and only one `responsibility (job)`
 - ### It should only have one `reason to change`
@@ -113,7 +108,7 @@ class Animal:
 ```python
 class Animal:
     def __init__(self, name: str):
-            self.name = name
+        self.name = name
     
     def get_name(self):
         pass
@@ -267,10 +262,10 @@ class Discount:
         self.price = price
 
     def give_discount(self):
-            if self.customer == 'fav':
-                return self.price * 0.2
-            if self.customer == 'vip':
-                return self.price * 0.4
+        if self.customer == 'fav':
+            return self.price * 0.2
+        if self.customer == 'vip':
+            return self.price * 0.4
 
 ```
 
@@ -287,7 +282,7 @@ class Discount:
         self.price = price
 
     def get_discount(self):
-            return self.price * 0.2
+        return self.price * 0.2
 
 
 class VIPDiscount(Discount):
@@ -377,6 +372,10 @@ animal_leg_count(animals)
 
 ```
 
+### Domino Effect:
+- violate `Liskov Substitution`
+- violate `Open/Close`
+
 ---
 
 ### Example of <strong style="color:skyblue;">L</strong>iskov Substitution <i class="green check circle outline icon"></i>
@@ -437,7 +436,6 @@ class IShape:
     def draw_circle(self):
         raise NotImplementedError
 
-
 class Square(IShape):
     pass
 
@@ -449,7 +447,8 @@ class Circle(IShape):
 
 ```
 
-Now we need `Triangle` !
+- Now we need `Triangle` !
+- Domino Effect: violate `Interface Segregation` -> violate `Open/Close`
 
 ---
 
@@ -495,9 +494,11 @@ class: middle
 
 # 5. <strong style="color:skyblue;">D</strong>ependency Inversion
 
-- ## Classes should 
-    - ## depend on abstraction 
-    - ## but not on concretion
+- ### Classes should 
+    - ### depend on abstraction 
+    - ### but not on concretion
+    
+- ### High-level modules should depend on `abstraction` of low-level level modules.
 
 ---
 
@@ -519,11 +520,14 @@ class Http:
         self.xml_http_service.request(url, 'POST', options)
 ```
 - `Http` is `high-level` component ; `XMLHttpService` is `low-level` component.
-- High-level modules should depend on `abstraction` of low-level level modules.
 
 <hr/>
 
-Need to change the Http connection service -> move through all the instances of Http to edit code -> violate `OCP` !
+Domino Effect: <br/> 
+Need to change the Http connection service <br/>
+-> Move through all the instances of Http to edit code! <br/>
+-> Violate `Dependency Inversion` <br/>
+-> Violate `Open/Close` <br/>
 
 ---
 
