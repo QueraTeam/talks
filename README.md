@@ -13,3 +13,4 @@ We publish our presentations here to keep them organized and make them available
 | **Dependency Injection** | [Saeed Tahmasebi](https://github.com/saeed617)       | 2019 Nov 9  | [View](https://querateam.github.io/talks/presentations/Dependency%20Injection/Dependency%20Injection.pdf) |
 | **Anti-patterns**        | [Mehran Salmani](https://github.com/mehransi)        | 2019 Nov 27 | [View](https://querateam.github.io/talks/presentations/Anti-patterns/anti-patterns.pdf) |
 | **12 Factor App**        | [Arian Akbari](https://github.com/arianakbari)       | 2020 Feb 5  | [View](https://querateam.github.io/talks/presentations/12%20Factor%20App/) |
+| **SOLID principles**     | [Peyman Najafi](https://github.com/peynaj)           | 2020 Feb 18 | [View](https://querateam.github.io/talks/presentations/SOLID-principles)   |
