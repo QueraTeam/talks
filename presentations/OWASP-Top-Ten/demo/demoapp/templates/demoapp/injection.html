@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1>SQL Injection Demo</h1>
+<p>
+    Enter  <code style="background-color: #eee">demo</code> as username and
+    <code style="background-color: #eee">' OR '1' = '1</code> as password.
+</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username"/>
+    <input type="text" name="password" placeholder="password"/>
+    <input type="submit" value="Login"/>
+</form>
+{% if authenticated %}
+    <h2 style="color: green">Correct Password</h2>
+{% endif %}
+<a href="{% url 'index' %}">Back to Index</a>
+</body>
+</html>
