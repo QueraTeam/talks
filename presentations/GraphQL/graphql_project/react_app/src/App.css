@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+.App {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "categories posts";
+}
+
+#category_container {
+    grid-area: categories;
+    background-color: #f5cac3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+#input_field {
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 2rem 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.category {
+    padding: 1.5rem .5rem;
+    /*border: 1px #ead5d1 dotted;*/
+}
+
+.no_results {
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    font-family: 'Staatliches', cursive;
+}
+
+.category.active {
+    background-color: #ead5d1;
+}
+
+
+.category:hover {
+    background-color: #ead5d1;
+    cursor: pointer;
+}
+
+#post_container {
+    grid-area: posts;
+    background-color: #f7ede2;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hanalei Fill', cursive;
+}
+
+.loading {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no_category {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no_category h1 {
+    font-family: 'Staatliches', cursive;
+    opacity: .4;
+}

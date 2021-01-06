@@ -1,0 +1,133 @@
+[
+  {
+    "model": "blog.category",
+    "pk": 1,
+    "fields": {
+      "name": "RPC"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 2,
+    "fields": {
+      "name": "GraphQL"
+    }
+  },
+  {
+    "model": "blog.category",
+    "pk": 3,
+    "fields": {
+      "name": "REST"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "name": "What is GraphQL?",
+      "content": "",
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+      "name": "Queries and Mutations",
+      "content": null,
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+      "name": "Schemas and Types",
+      "content": null,
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+      "name": "Validation",
+      "content": null,
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 6,
+    "fields": {
+      "name": "Execution",
+      "content": null,
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 7,
+    "fields": {
+      "name": "Friendship with Rest and RPC or Enemy?",
+      "content": null,
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 8,
+    "fields": {
+      "name": "GraphQL with Django and React",
+      "content": null,
+      "categories": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 9,
+    "fields": {
+      "name": "Why not to use RPC?",
+      "content": "",
+      "categories": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 10,
+    "fields": {
+      "name": "RPC is not good",
+      "content": "",
+      "categories": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 11,
+    "fields": {
+      "name": "Why we should hate RPC",
+      "content": "",
+      "categories": [
+        1
+      ]
+    }
+  }
+]

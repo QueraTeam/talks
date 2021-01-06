@@ -1,0 +1,26 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: BlogQuery
+}
+
+type BlogQuery {
+    allCategories: [CategoryType]
+    allPosts: [PostType]
+    categoryByName(name: String!): [CategoryType]
+    postById(id: Int!): PostType
+    postsByCategoryId(id: Int!): [PostType]
+}
+
+type CategoryType {
+    id: ID!
+    name: String!
+    postSet: [PostType!]!
+}
+
+type PostType {
+    categories: [CategoryType!]!
+    content: String
+    id: ID!
+    name: String!
+}

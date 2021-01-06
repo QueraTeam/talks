@@ -1,0 +1,5 @@
+/venv/
+/db.sqlite3
+/react_app/node_modules/
+/react_app/.eslintcache
+/react_app/package-lock.json

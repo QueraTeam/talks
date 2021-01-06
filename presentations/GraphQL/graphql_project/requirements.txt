@@ -1,0 +1,15 @@
+aniso8601==7.0.0
+asgiref==3.3.1
+Django==3.1.5
+django-cors-headers==3.6.0
+graphene==2.1.8
+graphene-django==2.15.0
+graphql-core==2.3.2
+graphql-relay==2.0.1
+promise==2.3
+pytz==2020.5
+Rx==1.6.1
+singledispatch==3.4.0.3
+six==1.15.0
+sqlparse==0.4.1
+text-unidecode==1.3
