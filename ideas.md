@@ -1,0 +1,55 @@
+# Ideas
+
+- SSR
+- Man in the middle
+- Microservices
+- Regex
+- Dev tools
+- Python AsyncIO
+- React Design Patterns
+- Python Type Hints
+- Ansible
+- Git (Scenario Base)
+- CI/CD
+- GIL
+- Elastic Search 
+- ELK
+- Benchmark Load Test
+- IoC Container
+- Linux pro max
+- Message Queue
+- Crypto Graphy
+- Algorithms (Ali Shafiee)
+- Javascript event loop
+- SASS
+- Browser Request Process
+- Arch vs Ubuntu
+- Design Patterns
+- Bad Smell
+- NginX
+- WSGI/ASGI
+- Polymorphism
+- C Binding
+- PyPy
+- Javascript Promies/Asynic
+- VueJS
+- Why not to use REST?
+- NextJS
+- Python Gotchas
+- Golang
+- Rust
+- HTTP1/2/3
+- Prometheus
+- Python Speed
+- Oauth
+- Kernel Modules
+- Architectural Design Patterns
+- Python Compilers
+- Who is a Software Engineer?
+- Developer Roles(DevOps, SRE, etc)
+- Big Data Technologies (Spark, Hadoop, etc)
+- Free Software
+- Distributed Algorithms
+- Blockchain
+- Bitcoin
+- Git vs SVN
