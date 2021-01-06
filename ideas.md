@@ -9,20 +9,20 @@
 - React Design Patterns
 - Python Type Hints
 - Ansible
-- Git (Scenario Base)
+- Git in action (scenario-based)
 - CI/CD
 - GIL
-- Elastic Search 
-- ELK
-- Benchmark Load Test
+- Elasticsearch
+- ELK stack
+- Benchmark, Load Test
 - IoC Container
 - Linux pro max
 - Message Queue
-- Crypto Graphy
+- Cryptography
 - Algorithms (Ali Shafiee)
 - Javascript event loop
-- SASS
-- Browser Request Process
+- Sass
+- How the browser processes a web page
 - Arch vs Ubuntu
 - Design Patterns
 - Bad Smell
@@ -31,25 +31,26 @@
 - Polymorphism
 - C Binding
 - PyPy
-- Javascript Promies/Asynic
-- VueJS
+- Javascript Promise/Async
+- Vue.js
 - Why not to use REST?
 - NextJS
 - Python Gotchas
 - Golang
 - Rust
-- HTTP1/2/3
+- HTTP 1/2/3
 - Prometheus
 - Python Speed
-- Oauth
+- OAuth
 - Kernel Modules
 - Architectural Design Patterns
 - Python Compilers
 - Who is a Software Engineer?
-- Developer Roles(DevOps, SRE, etc)
+- Technical Roles (DevOps, SRE, etc)
 - Big Data Technologies (Spark, Hadoop, etc)
 - Free Software
 - Distributed Algorithms
+- MapReduce
 - Blockchain
 - Bitcoin
 - Git vs SVN
