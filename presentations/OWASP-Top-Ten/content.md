@@ -566,7 +566,11 @@ layout: true
 - Vulnerability in OpenSSL cryptography library (**widely used** TLS implementation)
 - Introduced to the software in **2012**, publicly disclosed in **April 2014**
 - Results from improper input validation (missing bounds check)
-- Allows anyone on the Internet to **read the memory** of the vulnerable system. 
+- Allows anyone on the Internet to **read the memory** of the vulnerable system.
+
+---
+layout:false
+background-image: url(images/xkcd-heartbleed.png)
 
 ---
 layout: true
@@ -619,13 +623,9 @@ layout: true
 ![Risk-Factors](images/owasp-risk-factors.png)
 
 ---
-layout: true
----
-
-<div id="questions"></div>
-
----
 layout: false
+background-image: url(images/any-questions.jpg)
+---
 ## References
 
 <div id="before-references"></div>
