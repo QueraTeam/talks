@@ -1,0 +1,16 @@
+          Binary Operators          
+  ==================================                         { ...block... }  =>  {}
+          a + b  <=>  a - b                                         if (...)  =>  if (true)
+          a * b  <=>  a / b                                         if (...)  =>  if (false)
+         a == b  <=>  a != b                               for (...;...;...)  =>  for(...;true/false;...)
+         a || b  <=>  a && b                            do { ...} while(...)  =>  do{...} while(false)
+          a % b  <=>  a * b                             while(...) do { ...}  =>  while(false) do { ...}
+   a < b, a > b  <=>  a <= b, a >= b                 conditions(a || b, ...)  =>  true/false
+                                                                        true <=>  false
+          Unary Operators      
+      =========================
+           -a    <=>    +a                                         [a, b, c]  =>  []
+           !a     =>    a                                 "non-empty string" <=>  ""
+          ++a    <=>    --a                                 {"a": 1, "b": 2}  =>  {}
+          a++    <=>    a--    
+           ~a     =>    a     
