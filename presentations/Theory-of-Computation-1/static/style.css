@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #eee;
+}
+
+.remark-slide-content {
+    background-color: #111 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 24px;
+}
+
+h1, h2, h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: normal;
+}
+
+h1 > code, h2 > code, h3 > code {
+    font-size: .8em;
+}
+
+h2 {
+/*    font-size: 42px !important;*/
+    color: rgb(255, 217, 102);
+}
+
+p {
+    line-height: 1.5em;
+}
+
+ul, ol {
+    line-height: 1.8em;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+strong, b {
+    color: rgb(255, 217, 102);
+    font-weight: 900;
+}
+
+.remark-inline-code {
+    background-color: rgba(255,255,255,0.12);
+    border-radius: .2em;
+    padding: 0 .3em .1em;
+}
+
+pre code {
+    color: #333;
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: .4em;
+    display: block;
+    padding: .5em;
+}
+
+.hljs-github .hljs {
+    background: #f6f6f6 !important;
+    border: 1px solid #ddd;
+    border-radius: .4em;
+}
+
+pre {
+    border-radius: .4em;
+    line-height: 1.1em;
+    overflow-x: auto;
+}
+
+table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 15px;
+}
+
+table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.remark-slide-content a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.remark-slide-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 450px;
+    margin: auto;
+}
+
+blockquote {
+    margin: 0 0 1em 0;
+    padding: 1px 1em;
+    background: rgba(255,255,255,0.1);
+}
+
+img[alt="Figure-1"] {
+    width: 300px;
+}
+img[alt="Figure-2"] {
+    height: 300px;
+}
+img[alt="Figure-3"] {
+    height: 200px;
+}
+img[alt="Figure-4"] {
+    height: 140px;
+}
+img[alt="Figure-10"] {
+    float: right;
+    margin-left: 1em;
+}
+img[alt="Book-Cover"] {
+    float: right;
+}
+#before-references + ul li {
+    line-height: 1.3;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduction to the Theory of Computation - Part One</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="../static/remark.0.14.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script>
+</head>
+<body>
+<script>
+    var renderMath = function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false},
+                {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+    };
+
+    function renderGHButtons() {
+        var jsElm = document.createElement("script");
+        jsElm.type = "application/javascript";
+        jsElm.src = "https://buttons.github.io/buttons.js";
+        document.body.appendChild(jsElm);
+    }
+
+    var slideshow = remark.create({
+        ratio: "16:9",
+        sourceUrl: "content.md",
+        highlightStyle: "github",
+        countIncrementalSlides: false,
+    }, function () {
+        renderMath();
+        renderGHButtons();
+    });
+</script>
+</body>
+</html>
