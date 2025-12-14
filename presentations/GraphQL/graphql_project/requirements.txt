@@ -11,5 +11,5 @@ pytz==2020.5
 Rx==1.6.1
 singledispatch==3.4.0.3
 six==1.15.0
-sqlparse==0.4.1
+sqlparse==0.4.4
 text-unidecode==1.3
